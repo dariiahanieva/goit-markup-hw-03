@@ -25,7 +25,7 @@ img {
   display: block;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -129,6 +129,8 @@ img {
 /* Hero */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--bcg-color);
   text-align: center;
 }
@@ -171,7 +173,17 @@ section {
 }
 
 /* Features */
-.feature-section {
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .feature-list {
   display: flex;
@@ -291,15 +303,13 @@ section {
 .button {
   border-radius: 4px;
   padding: 10px 32px;
+  text-align: center;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   border-style: none;
@@ -307,6 +317,8 @@ section {
 
 .button-link {
   display: flex;
+  text-align: center;
+  margin-left: 280px;
   /* padding-right: 8px; */
 }
 
@@ -317,6 +329,9 @@ section {
 .button-filter {
   border-radius: 4px;
   padding: 6px 22px;
+
+  /* flex-direction: row;
+  justify-content: center; */
 
   color: var(--title-text-color);
   background-color: var(--button-color);
