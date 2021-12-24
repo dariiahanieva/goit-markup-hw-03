@@ -319,6 +319,7 @@ section {
   display: flex;
   text-align: center;
   margin-left: 280px;
+  margin-top: 100px;
   /* padding-right: 8px; */
 }
 
@@ -349,7 +350,8 @@ section {
 }
 
 /*  Portfolio */
-
+.portfolio {
+}
 .gallery-title {
   color: var(--title-text-color);
   font-weight: 700;
