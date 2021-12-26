@@ -6,6 +6,7 @@
   --button-color: #f5f4fa;
   --bcg-color: #2f303a;
   --logo-black-color: #000000;
+  --bcg-for-header: #ececec;
 }
 
 body {
@@ -40,6 +41,9 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  border-bottom-color: var(--bcg-for-header);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 
 /* Logo */
@@ -173,6 +177,12 @@ section {
 }
 
 /* Features */
+
+.feature-section {
+  padding-top: 115px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -187,8 +197,13 @@ section {
 }
 .feature-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
+
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -196,12 +211,17 @@ section {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  /* line-height: 1.14; */
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .feature-list .text {
   font-size: 14px;
   line-height: 1.71;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
 
 /* Work */
@@ -320,16 +340,18 @@ section {
   text-align: center;
   margin-left: 280px;
   margin-top: 100px;
-  /* padding-right: 8px; */
+  margin-right: 8px;
 }
 
-.button-link:nth-last-child(n5) {
+/* .button-link:nth-last-child(n5) {
   padding-right: 0;
-}
+} */
 
 .button-filter {
+  /* text-align: center; */
   border-radius: 4px;
   padding: 6px 22px;
+  margin-right: 0px;
 
   /* flex-direction: row;
   justify-content: center; */
@@ -341,6 +363,10 @@ section {
   line-height: 1.62;
   cursor: pointer;
   border-style: none;
+}
+
+.button-filter:last-child {
+  margin-right: 8px;
 }
 
 .button-filter:hover,
